@@ -10,7 +10,7 @@ import CategoryDetail from "./pages/Category/CategoryDetail";
 import dataCategory from "./ListDataCategory";
 import data from "./ListProduct";
 import dataMenu from "./ListMenuData";
-// import ProductDetail from "./pages/ProductDetail/ProductDetail";
+import ProductDetail from "./pages/ProductDetail/ProductDetail";
 import Cart from "./pages/Cart/Cart";
 function App() {
   const { categorys } = dataCategory;
@@ -47,7 +47,7 @@ function App() {
             exact
             element={<Pay categorys={categorys} listsmenu={listsmenu} />}
           />
-          {/* <Route
+          <Route
             path="/product-detail/:slug.:id.html"
             exact
             element={
@@ -57,7 +57,7 @@ function App() {
                 products={products}
               />
             }
-          /> */}
+          />
           <Route
             path="/category-detail/:slug.:id.html"
             element={
