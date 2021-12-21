@@ -6,12 +6,12 @@ import HomePage from "./pages/HomePage/HomePage";
 import Policy from "./pages/HomePage/Policy/Policy";
 import Transport from "./pages/HomePage/Transport/Transport";
 import Pay from "./pages/HomePage/Pay/Pay";
-// import CategoryDetail from "./pages/Category/CategoryDetail";
+import CategoryDetail from "./pages/Category/CategoryDetail";
 import dataCategory from "./ListDataCategory";
 import data from "./ListProduct";
 import dataMenu from "./ListMenuData";
 // import ProductDetail from "./pages/ProductDetail/ProductDetail";
-// import Cart from "./pages/Cart/Cart";
+import Cart from "./pages/Cart/Cart";
 function App() {
   const { categorys } = dataCategory;
   const { products } = data;
@@ -58,7 +58,7 @@ function App() {
               />
             }
           /> */}
-          {/* <Route
+          <Route
             path="/category-detail/:slug.:id.html"
             element={
               <CategoryDetail
@@ -67,12 +67,12 @@ function App() {
                 listsmenu={listsmenu}
               />
             }
-          /> */}
-          {/* <Route
+          />
+          <Route
             path="/cart-page"
             exact
             element={<Cart categorys={categorys} listsmenu={listsmenu} />}
-          /> */}
+          />
         </Routes>
       </Router>
     </>
