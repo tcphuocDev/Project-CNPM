@@ -47,6 +47,7 @@ function App() {
             exact
             element={<Pay categorys={categorys} listsmenu={listsmenu} />}
           />
+
           <Route
             path="/product-detail/:slug.:id.html"
             exact
